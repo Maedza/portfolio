@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects in Exploration | Elton Chipika</title>
+  <meta name="description" content="Experimental and in-development projects by Elton Chipika, a Communication Engineering student focused on software, data processing, and cloud architecture.">
+  <link rel="icon" type="image/jpeg" href="img/avatar.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="img/avatar.jpg" alt="" width="32" height="32" class="brand-avatar">
+        EC<span class="brand-dot">.</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#resume">Resume</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding: 140px 0 40px;">
+    <div class="container hero-inner">
+      <h1>Projects in Exploration</h1>
+      <p class="bio">Ideas and systems in early development.</p>
+    </div>
+  </header>
+
+  <main class="section" style="padding-top: 40px;">
+    <div class="container">
+      <article class="card" style="padding: 36px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
+          <span class="chip" style="background: rgba(96,165,250,0.12); color: var(--accent); border-color: transparent;">In Development</span>
+          <span class="chip">Software</span>
+          <span class="chip">Data Processing</span>
+          <span class="chip">Cloud Architecture</span>
+        </div>
+
+        <h2 class="card-title" style="font-size: 1.6rem; margin-bottom: 8px;">Crowdsourced Road Intelligence System</h2>
+        <p class="card-sub">Primary Focus: Software, data processing, and cloud architecture</p>
+
+        <h3 class="skill-heading" style="margin-top: 28px;">Overview</h3>
+        <p class="card-desc">The Crowdsourced Road Intelligence System is a software-focused concept for collecting and sharing road intelligence through data contributed by participating vehicles.</p>
+        <p class="card-desc">The system is designed around a crowdsourced model: vehicles can contribute observations about road conditions along with relevant location and sensor data. These observations are processed and validated in the cloud before being added to a shared layer of road intelligence.</p>
+        <p class="card-desc">The resulting information can then be matched to vehicles approaching the relevant location or travelling through the same vicinity, providing them with advance awareness of reported hazards or road conditions.</p>
+        <p class="card-desc">The system is not intended to replace human vision or driver awareness. Its purpose is to provide an additional layer of shared road awareness by allowing information encountered by one vehicle to become useful to other road users.</p>
+
+        <h3 class="skill-heading" style="margin-top: 28px;">Core Goal</h3>
+        <p class="card-desc">The primary goal is to explore how useful road intelligence can be collected at a lower cost and made available in areas where expensive road-monitoring infrastructure or specialized surveying systems may be unavailable. Instead of relying on a single dedicated monitoring system, the platform explores how observations from many participating vehicles can collectively contribute to a broader understanding of road conditions.</p>
+
+        <h3 class="skill-heading" style="margin-top: 28px;">System Flow</h3>
+        <p class="card-desc" style="font-family: var(--font-mono, monospace);">Vehicle observations &rarr; Cloud ingestion &rarr; Validation &amp; processing &rarr; Road intelligence &rarr; Location &amp; relevance matching &rarr; Hazard information for approaching vehicles</p>
+
+        <h3 class="skill-heading" style="margin-top: 28px;">Prototype</h3>
+        <p class="card-desc">The initial proof of concept uses a bicycle-mounted setup to simulate a participating vehicle and provide real-world sensor data for testing.</p>
+        <ul style="color: var(--text-muted); margin: 10px 0 0 20px;">
+          <li>Camera</li>
+          <li>GPS</li>
+          <li>9-DOF IMU</li>
+          <li>ESP32-S3-CAM</li>
+        </ul>
+        <p class="card-desc">The prototype hardware is primarily used to validate the software and data-processing concepts. It does not define the final architecture.</p>
+
+        <h3 class="skill-heading" style="margin-top: 28px;">Hardware-Agnostic Design</h3>
+        <p class="card-desc">The system is intended to remain hardware-agnostic. Different cameras, GPS devices, sensors, vehicles, or other compatible data sources could be used as long as they provide the information required by the processing pipeline. This allows the project to focus primarily on the software architecture and intelligence layer rather than being tied to a specific hardware platform.</p>
+
+        <h3 class="skill-heading" style="margin-top: 28px;">Current Development Focus</h3>
+        <div class="chips" style="margin-bottom: 28px;">
+          <span class="chip">Crowdsourced data collection</span>
+          <span class="chip">Location-aware road observations</span>
+          <span class="chip">Cloud data ingestion</span>
+          <span class="chip">Data validation and processing</span>
+          <span class="chip">Road-feature and hazard detection</span>
+          <span class="chip">Road intelligence storage</span>
+          <span class="chip">Location and relevance matching</span>
+          <span class="chip">Distribution of relevant hazard information</span>
+          <span class="chip">Hardware-agnostic architecture</span>
+        </div>
+
+        <h3 class="skill-heading">Flow Diagram</h3>
+        <img src="img/cris_flow_diagram.jpg" alt="Crowdsourced Road Intelligence System flow diagram" style="width: 100%; max-width: 880px; border-radius: 12px; border: 1px solid var(--border); margin-top: 10px;">
+
+        <h3 class="skill-heading" style="margin-top: 28px;">Future Direction</h3>
+        <p class="card-desc">The long-term concept is to explore how observations from a growing number of contributors could be combined to create increasingly useful and reliable road intelligence, particularly for areas where conventional road-monitoring infrastructure is limited.</p>
+      </article>
+
+      <div style="margin-top: 36px; text-align: center;">
+        <a href="index.html" class="btn btn-primary">Back Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> Elton Chipika</span>
+      <span>Built with plain HTML, CSS &amp; JS</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
