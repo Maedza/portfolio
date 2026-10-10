@@ -433,14 +433,17 @@ body {
   .nav-links {
     display: none;
     position: absolute;
-    top: 64px;
-    left: 0; right: 0;
+    top: 72px;
+    right: 16px;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
     background: var(--bg);
-    border-bottom: 1px solid var(--border);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
     padding: 8px 0;
+    min-width: 160px;
   }
 
   .nav-links.open { display: flex; }
