@@ -205,11 +205,11 @@ body {
 .btn:hover { transform: translateY(-1px); }
 
 .btn-primary {
-  background: var(--accent);
+  background: #4d84cb;
   color: #ffffff;
 }
 
-.btn-primary:hover { background: var(--accent-hover); }
+.btn-primary:hover { background: #5d94db; }
 
 .btn-ghost {
   background: transparent;
@@ -219,7 +219,7 @@ body {
 
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
-.btn-sm { padding: 9px 20px; font-size: 0.88rem; }
+.btn-sm { padding: 8px 14px; font-size: 0.88rem; }
 
 /* About */
 .about-grid {
@@ -436,6 +436,7 @@ body {
     top: 64px;
     left: 0; right: 0;
     flex-direction: column;
+    align-items: stretch;
     gap: 0;
     background: var(--bg);
     border-bottom: 1px solid var(--border);
