@@ -363,7 +363,7 @@ body {
 
 .resume-preview {
   position: relative;
-  max-width: 520px;
+  max-width: 300px;
   margin: 0 auto 28px;
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -373,17 +373,18 @@ body {
   pointer-events: none;
 }
 
-.resume-preview iframe {
+.resume-preview img {
   display: block;
   width: 100%;
-  height: 380px;
-  border: 0;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .resume-preview-fade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(15, 17, 21, 0) 45%, rgba(15, 17, 21, 0.65) 75%, #0f1115 100%);
+  background: linear-gradient(to bottom, rgba(15, 17, 21, 0) 70%, rgba(15, 17, 21, 0.5) 90%, #0f1115 100%);
 }
 
 /* Contact */
